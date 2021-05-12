@@ -23,7 +23,7 @@ namespace Formen
 
         public static Kugel vonRadius(double radius) => new Kugel() { _radius = radius };
         public static Kugel vonDurchmesser(double durchmesser) => new Kugel() { _radius = durchmesser / 2d };
-        public static Kugel vonUmfang(double umfang) => new Kugel() { _radius = umfang / ( 2d * Math.PI) };
+        public static Kugel vonUmfang(double umfang) => new Kugel() { _radius = umfang / (2d * Math.PI) };
         public static Kugel vonVolumen(double volumen) => new Kugel() { _radius = NthRoot((3 * volumen) / (4d * Math.PI), 3) };
         public static Kugel vonOberfläche(double oberfläche) => new Kugel() { _radius = Math.Sqrt(oberfläche / (4d * Math.PI)) };
 
